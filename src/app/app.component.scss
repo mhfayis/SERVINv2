@@ -1,0 +1,27 @@
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+}
+#main {
+  transition: margin-left 0.5s;
+  margin-left: 60px;
+}
+
+.example-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.dashbord {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}

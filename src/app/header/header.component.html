@@ -1,0 +1,58 @@
+<mat-toolbar style="position: sticky; top: 0; z-index: 10">
+  <mat-toolbar-row class="primary-container">
+    <img
+      src="assets/servin_logo_wobg.jpg"
+      class="custom-image"
+      alt="Image Description"
+    />
+    <div>
+      <button class="primary-cubutton" mat-flat-button>Offers</button>
+
+      <button mat-flat-button class="secondry-cubutton">Products</button>
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search..." (input)="onSearch()" />
+      <!-- <div class="sr-icon"> -->
+      <button mat-icon-button aria-label="Example icon-button with menu icon">
+        <mat-icon>search</mat-icon>
+      </button>
+      <!-- </div> -->
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="secondry-cuheader">
+    <!-- <button
+      (click)="toggle()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <button
+      (click)="toggle()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+    <div class="header-routs">
+      <button mat-button>All offers</button>
+      <button mat-button>Supermarket</button>
+      <button mat-button>Home & Tools</button>
+      <button mat-button>Electronics</button>
+      <button mat-button>Furniture</button>
+      <button mat-button>Cafe & Restaurants</button>
+      <button mat-button>Others</button>
+    </div>
+    <div></div>
+
+    <!-- <button mat-button [matMenuTriggerFor]="belowMenu">Below</button> -->
+    <!-- <mat-menu #belowMenu="matMenu" yPosition="below"> -->
+    <!-- <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button> -->
+    <!-- </mat-menu> -->
+  </mat-toolbar-row>
+</mat-toolbar>

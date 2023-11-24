@@ -1,0 +1,64 @@
+.container_browser {
+  grid-row: 1;
+  display: flex;
+  grid-column: 2;
+  overflow: hidden;
+  padding-left: 0px;
+  margin: 20px;
+
+  position: relative;
+  //   flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #d4d4d4;
+  height: var(--outlet-height);
+}
+.container_product {
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #d4d4d4;
+  height: var(--outlet-height);
+}
+
+.box-exp {
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid #000000;
+  min-width: 100px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.log-image {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.brow-image {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.brow-container {
+  background-color: white;
+  height: 250px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: hidden; /* Enable horizontal scrolling */
+}
