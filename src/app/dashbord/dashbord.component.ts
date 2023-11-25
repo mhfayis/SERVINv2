@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-dashbord',
@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashbordComponent implements OnInit {
   numbers: number[] = [];
+  @ViewChild('scrollContainer') scrollContainer: ElementRef | undefined;
+
+  private scrollStep = 100;
+
+  scrollLeft() {
+    if (this.scrollContainer) {
+      this.scrollContainer.nativeElement.scrollLeft -= this.scrollStep;
+    }
+  }
+
+  scrollRight() {
+    if (this.scrollContainer) {
+      this.scrollContainer.nativeElement.scrollLeft += this.scrollStep;
+    }
+  }
 
   constructor() {
     for (let i = 1; i <= 35; i++) {
